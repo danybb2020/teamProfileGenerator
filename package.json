@@ -1,0 +1,24 @@
+{
+  "name": "hw9-teamprofilegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Unvaluedfall/HW9-TeamProfileGenerator.git"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unvaluedfall/HW9-TeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/Unvaluedfall/HW9-TeamProfileGenerator#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "inquirer": "^7.0.6",
+    "jest": "^25.1.0"
+  }
+}

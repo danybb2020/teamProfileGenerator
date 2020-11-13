@@ -1,0 +1,13 @@
+{{#each employee}}
+<div class="card m-4" style="width: 18rem; height: 15rem;">
+  <div class="card-header bg-primary">
+    {{this.title}}
+    {{this.name}}
+  </div>
+    <ul class="list-group list-group-flush p-1">
+      <li class="list-group-item">Id : {{this.id}}</li>
+      <li class="list-group-item">Email : {{this.email}}</li>
+      <li class="list-group-item"> {{this.officeNo}} {{this.github}} {{this.schoolName}} </li>
+    </ul>
+</div>
+{{/each}}
