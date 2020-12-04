@@ -86,7 +86,7 @@ function appMenu () {
         ]).then(answers => {
             const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
             teamMembers.push(manager);
-            idArray.push(answers.manag(erId);
+            idArray.push(answers.managerId);
             createTeam();
         });
    }
@@ -173,7 +173,7 @@ function addEngineer(){
             name: "engineerGitHub",
             message: "What is the GitHub user name of the Engineer?",
             validate:answer => {
-                if (answer !== "" {
+                if (answer !== "") {
                     return true; 
                 }
                 return "Please enter at least one character ";
