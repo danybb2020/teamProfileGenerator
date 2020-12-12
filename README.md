@@ -1,11 +1,44 @@
-Team Profile Generator
+ Employee Tracker (MySql
 
-Template Engine - Employee Summary
+Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as **C**ontent **M**anagement **S**ystems. This app is a solution for managing a company's employees using node, inquirer, and MySQL.
 
-Node CLI that takes in information about employees and generates an HTML webpage that displays summaries for each person.
+The following database schema containing three tables:
 
-Software engineering team generator command line application. The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns. When the user has completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user.
+![Database Schema](Assets/schema.png)
 
-As a manager I can generate a webpage that displays my team's basic info so that they have quick access to emails and GitHub profiles
+* **department**:
+
+  * **id** - INT PRIMARY KEY
+  * **name** - VARCHAR(30) to hold department name
+
+* **role**:
+
+  * **id** - INT PRIMARY KEY
+  * **title** -  VARCHAR(30) to hold role title
+  * **salary** -  DECIMAL to hold role salary
+  * **department_id** -  INT to hold reference to department role belongs to
+
+* **employee**:
+
+  * **id** - INT PRIMARY KEY
+  * **first_name** - VARCHAR(30) to hold employee first name
+  * **last_name** - VARCHAR(30) to hold employee last name
+  * **role_id** - INT to hold reference to role employee has
+  * **manager_id** - INT to hold reference to another employee that manager of the current employee. This field may be null if the employee has no manager
+  
+Build a command-line application that at a minimum allows the user to:
+
+  * Add departments, roles, employees
+
+  * View departments, roles, employees
+
+  * Update employee roles
+
+Clients desires: 
+```
+As a business owner I want to be able to view and manage the departments, roles, and employees in my company So that I can organize and plan my business
+```
+
+
 
 ![Hnet-image (5)](https://user-images.githubusercontent.com/65620789/101999342-d1ef2500-3c90-11eb-9c61-dcb3801c6ad8.gif)
